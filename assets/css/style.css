@@ -131,7 +131,7 @@ h2 {
 #center-about{
     width:33%;
     margin: 0 auto;
-    background-color:green;
+ 
 }
 
 hr {
@@ -233,7 +233,7 @@ footer {
     color: #3a3a3a;
 }
 
-/* gallery */
+/* gallery - masonry style */
 
 #photos {
     clear: both; /* display photo section below the header */
@@ -247,3 +247,37 @@ footer {
     width: 100%
 
 }
+
+/* Media queries */
+
+/* for larger to medium screens size from 1200px wide and down - applies from 1200px down!*/
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+
+    }
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+    #left-about, #right-about {
+        width:100%;
+        float: left;
+        padding:0;
+
+    }
+    #center-about {
+        clear:both;
+        width: 100%;
+        float: left;
+        padding: 0;
+        
+    }
+    hr {
+        display:none;
+    }
+    
+} 
